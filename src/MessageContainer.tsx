@@ -324,8 +324,9 @@ export default class MessageContainer<
       distanceFromEnd <= 100 &&
       loadEarlier &&
       onLoadEarlier &&
-      !isLoadingEarlier &&
-      Platform.OS !== 'web'
+      !isLoadingEarlier 
+      // &&
+      // Platform.OS !== 'web'
     ) {
       onLoadEarlier()
     }
